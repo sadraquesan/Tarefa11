@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+     margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;                                
+}
+/*container do cabeçalho*/
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(97, 97, 227);
+    color: white;
+}
+.container h1 {
+    margin-inline-start: 12%; 
+}
+body {
+    background-color: rgb(177, 175, 175);
+}
+/*estilos dos elementos dentro do container*/
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#idnav {
+    display:flex;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline-end: 10%;
+}
+.classeUl li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    
+}
+/*container principal*/
+.class-main {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+           
+}
+h2 {
+    border-bottom: 2px solid  rgb(131, 131, 224); 
+    padding-top:32px;
+    color: rgb(57, 57, 232);
+}
+.noticia h2 {
+    margin-left: 16px;
+    border-bottom: 1px solid  rgb(131, 131, 224);
+    color: rgb(57, 57, 232);
+}
+.noticia p{
+    margin-top: 60px;
+    margin-left: 16px;
+}
+.destaque {
+    display: flex;
+    padding-top:16px;
+}
+
+.grid-container {
+           
+    display: grid;
+    width: 100%;
+    height: 160px;
+    padding-top: 16px;
+    grid-template-columns: repeat(5, 205px);
+    row-gap: 2%;
+}
+.grid-item:hover {
+    opacity: 0.5;
+}
+.grid-container p:hover {
+    opacity: 0.5;
+}
+.grid-item img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.destaque img {    
+    width: 320px;
+    height: 320px;
+    background-color: rgb(202, 204, 204);
+}
+/*.class-div {
+    text-align: center;
+    display: grid;
+    padding-top: 1px;
+    font-size: 12px;  
+    grid-template-columns: 200px 200px 200px 200px 200px;
+}*/
+.roda-pe {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(gray, black);
+    margin-top: 56px;
+    padding: 6px;
+
+}
+.roda-pe {
+    width: 100%;
+    height: 50px;
+}
+.botao_loja a, .botao_produto a {
+    text-decoration: none;
+    color: white
+}
+@media screen and (max-width: 767px){
+    header .container {
+        display: block;
+        
+    }
+    #idnav {
+        
+        margin-bottom: 1px;
+        margin: 30px;
+        margin-top: 1px;
+        height: 20px;
+        width: 250px;
+       
+    }
+    .container h1 {
+        margin-inline-start: 12%;
+        font-size: 16px;
+    }
+    .destaque {
+        display: block;
+
+    }
+    .grid-container {
+        display: block;
+    }
+    .grid-container img {
+        width: 375px;
+        height: 200px;
+    }
+    .destaque img {    
+        width: 374px;
+        height: 200px;
+        background-color: rgb(202, 204, 204);
+    }
+    #idnav {
+        display:flex;
+        margin-bottom: 2px;
+    }
+    h2 {
+        border-bottom: 2px solid  rgb(131, 131, 224); 
+        padding-top:4px;
+        color: rgb(57, 57, 232);
+    }
+    .noticia p{
+        margin-top: 10px;
+    }
+}
